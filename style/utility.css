@@ -1,0 +1,73 @@
+.px-lg{
+  padding-inline: var(--px-lg);
+}
+
+.px-base{
+  padding-inline: var(--px-base);
+}
+
+.py-base{
+  padding-block: var(--py-base);
+}
+
+.py-sm{
+  padding-block: var(--py-sm);
+}
+
+.py-md{
+  padding-block: var(--py-md);
+}
+
+.py-lg{
+  padding-block: var(--py-lg);
+}
+
+.gap-1{
+  gap: 1rem;
+}
+
+.gap\.5{
+gap: .5rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.center{
+  align-items: center;
+}
+
+.grid{
+  display: grid;
+}
+
+.surface{
+  background-color: var(--surface-color);
+}
+
+.desktop-only{
+  display: none;
+}
+
+.smartphone{
+  display: none;
+}
+
+@media (width >= 80em){
+  :root{
+    --py-base: 1.25rem;
+    --px-sm: var(--px-lg); 
+  }
+
+  .py-base{
+    padding-block: var(--py-base);
+  }
+
+  .desktop-only{
+    display: initial;
+  }
+}
+
+
+
