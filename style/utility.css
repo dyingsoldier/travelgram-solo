@@ -2,6 +2,10 @@
   padding-inline: var(--px-lg);
 }
 
+.margin{
+  margin-top: 1rem;
+}
+
 .px-base{
   padding-inline: var(--px-base);
 }
@@ -34,6 +38,14 @@ gap: .5rem;
   display: flex;
 }
 
+.column{
+  flex-direction: column;
+}
+
+.flex-d{
+  flex-direction: column;
+}
+
 .center{
   align-items: center;
 }
@@ -51,21 +63,33 @@ gap: .5rem;
 }
 
 .smartphone{
-  display: none;
+  display: initial;
+}
+
+.justify{
+  justify-content: space-between;
 }
 
 @media (width >= 80em){
   :root{
-    --py-base: 1.25rem;
-    --px-sm: var(--px-lg); 
-  }
-
-  .py-base{
-    padding-block: var(--py-base);
+    --py-base: .8rem;
+    --px-base: var(--px-lg)
   }
 
   .desktop-only{
     display: initial;
+  }
+  .smartphone{
+    display: none;
+  }
+
+  .flex-d{
+    padding-left: 2rem;
+    gap: .5rem;
+
+    & p{
+      max-width: 24rem;
+    }
   }
 }
 

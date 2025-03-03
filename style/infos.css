@@ -1,32 +1,38 @@
 .infos{
-
   & img{
     width: 120px;
     height: 120px;
   }
   & h1{
     margin-top: 1rem;
+    font: var(--fw-bold) 1.5rem var(--ff-poppins);
   }
+
   & p{
+    font: var(--fw-base) var(--fs-md) var(--ff-poppins);
     margin-top: .5rem;
-    width: 18.5rem;
   }
 }
 
 .extras{
-  margin-top: 2rem;
-
   & ul{
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
+
+  & span{
+    font: var(--fw-base) var(--fs-md) var(--ff-poppins);
+  }
 }
 
-@media (width>=80em){
+@media (width >= 80em){
+
   .infos{
-    & p{
-      width: 24rem;
-    }
-  }
+    & img{
+     width: 176px;
+     height: 176px;
+   }
+ }
 }
