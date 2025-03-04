@@ -64,6 +64,12 @@ html{
   color: var(--text-color-secondary);
 
   scroll-behavior: smooth;
+
+  overflow-x: hidden;
+}
+
+body{
+  overflow-x: hidden;
 }
 
 a{
